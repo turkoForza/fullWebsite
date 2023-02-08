@@ -4,4 +4,4 @@
 
 <a href="https://darling-parfait-f1de91.netlify.app/">Online Review</a>
 
-![design](/img/screen.gif.gif)
+![design](/img/screen.gif)
