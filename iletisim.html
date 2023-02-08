@@ -10,8 +10,11 @@
 </head>
 <body>
     <div class="social">
-        <span><h3>PAYLAŞTIKÇA | </h3> Bilgi Paylaştıkça Çoğalır...</span>
-        <div>
+        <div id="logo">
+            <h3>PAYLAŞTIKÇA</h3>
+            <span>Bilgi Paylaştıkça Çoğalır</span>
+        </div>
+        <div id="brands">
             <i class="fas fa-search"></i>
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
@@ -23,40 +26,48 @@
         <header><img src="/img/banner1.jpg" alt="">
         <span>PAYLAŞTIKÇA</span></header>
         <section>
-            <nav><ul>
-                <li><a href="anasayfa.html"><i class="fas fa-home"></i>Anasayfa</a></li>
-                <li><a href="hakkimizda.html"><i class="fas fa-users"></i>Hakkımızda</a></li>
-                <li><a href="referanslar.html"><i class="fas fa-asterisk"></i>Referanslar</a></li>
-                <li><a href="galeri.html"><i class="fas fa-images"></i>Galeri</a></li>
-                <li><a href="iletisim.html"><i class="far fa-address-book"></i>İletişim</a></li>
-            </ul></nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i><span>Anasayfa</span></a></li>
+                    <li><a href="hakkimizda.html"><i class="fas fa-users"></i><span>Hakkımızda</span></a></li>
+                    <li><a href="referanslar.html"><i class="fas fa-asterisk"></i><span>Referanslar</span></a></li>
+                    <li><a href="galeri.html"><i class="fas fa-images"></i><span>Galeri</span></a></li>
+                    <li><a href="iletisim.html"><i class="far fa-address-book"></i><span>İletişim</span></a></li>
+                    </ul>
+            </nav>
             <main>
                 <h1>İletişim</h1>
                 <div class="conts">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.79327595135!2d28.8720964464606!3d41.00549580940238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1672344525664!5m2!1str!2str" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.79327595135!2d28.8720964464606!3d41.00549580940238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1672344525664!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                     <div class="infos">
-                        <div class="form">
-                           <div class="words"> 
-                                <div> Adınız </div>
-                                <div> Soyadınız </div>
-                                <div> Mesaj </div>
-                            </div>
-                            <div class="inputs">
-                                <div><input type="text" id="ad" placeholder="   Adınızı giriniz"></div>                            
-                                <div><input type="text" id="soyad" placeholder="   Soyadınızı giriniz"></div>                            
-                                <div><textarea id="mesaj" rows="10" cols="50" placeholder="  Mesajınızı yazınız"></textarea></div>
-                                <button>Gönder</button>
-                            </div>
-                        </div>
+                        <form>          
+                            <label for="ad">Adınız</label>
+                            <br>
+                            <input type="text" id="ad" placeholder="Adınızı giriniz">                           
+                            <br>
+                            <label for="soyad">Soyadınız</label>
+                            <br>
+                            <input type="text" id="soyad" placeholder="Soyadınızı giriniz">
+                             <br>                          
+                            <label for="mesaj">Mesajınız</label>
+                            <br>
+                            <textarea id="mesaj" rows="10" cols="50" placeholder="  Mesajınızı yazınız"></textarea>
+                            <br>
+                            <button>Gönder</button>
+                        </form>
                         <div class="adres">
                             <h2>ADRES</h2>
-                            <span>
+                            <p>
                                 Hacı Hüsrev Mahallesi Mahi Sultan Bulvarı No: 36/A 
-                                Fatih/İSTANBUL  
-                            </span>
-                            <span>0212 999 99 99</span>
-                            <span>paylastikca@paylastikca.com</span>
-                            <span>www.paylastikca.com</span>
+                                Fatih/İSTANBUL <br>
+                                0212 999 99 99
+                                <br>
+                                paylastikca@paylastikca.com
+                                <br>
+                                www.paylastikca.com
+                            </p>
                         </div>
                     </div>
                 </div>

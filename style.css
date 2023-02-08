@@ -29,28 +29,25 @@ body{
     z-index: 99;
 }
 
-.social span{
+.social #logo{
     display: flex;
-    gap: 5px;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-    line-height: 50px;
-    
+    align-items: center;
+    gap: 20px;
 }
 
-.social span h3{
-    font-weight: 300;
-    font-size: 20px;
+#logo span{
+    border-left: 1px solid white;
+    padding-left: 10px;
 }
 
-.social div {
+.social #brands {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .container {
-    margin: 0 200px;
+    margin: 10px 10%;
 }
 
 header{
@@ -85,7 +82,7 @@ section {
 
 section nav {
     margin-top: 20px;
-    width: 250px;
+    width: 10%;
     
 }
 
@@ -114,20 +111,20 @@ section nav i {
 }
 
 section main {
-    width: 1250px;
-    margin: 20px;
+    width: 90%;   
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
 .content{
-    width: 600px;
+    flex: 1 1 40%;
+    margin: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
     color: #b4b4b4;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -135,7 +132,9 @@ section main {
 }
 
 .content img {
-    width: 600px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -181,15 +180,19 @@ main h1 {
     line-height: 50px;
     background-color: black;
     color: white;
-    margin-bottom: 30px;
+    margin: 0 0 30px 10px;
     border-radius: 10px;
 
+}  
+
+.about-us{
+    margin-left: 10px;
 }
 
 .about-us img {
-    width: 500px;
-    float: left;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -215,11 +218,15 @@ main h1 {
 }
 
 .ref{
-    width: 380px;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px 2px #b4b4b4;
+}
+
+.ref{
+    margin: 10px 20px;
 }
 
 .ref img {
@@ -275,97 +282,167 @@ main h1 {
 /*contacts*/
 
 .conts {
+    margin-left: 10px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 30px;
-}
-
-.conts iframe {
-    height: 350px;
-    border-radius: 10px;
-    border-style: none;
-    margin-top: -20px;
-}
-
-.infos {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    border: 1px solid rgb(212, 210, 210);
-}
-
-.form {
-    width: 50%;
-    height: 400px;
-    border: 1px solid rgb(212, 210, 210);
-    margin: 10px 5px 10px 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
-    gap: 50px;
-}
-
-.words {
-    display: flex;
     flex-direction: column;
-    gap: 60px;
-    padding-top: 10px;
+    width: 90%;
 }
 
-.inputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    position: relative;
+.conts #map{
+    flex: 1 1 100%;
+    width: 80%;
+    height: 500px; 
 }
 
-.inputs input {
+.conts #map iframe{
     width: 100%;
+    border-radius: 10px;
+}
+
+.conts .infos{
+    flex: 1 1 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.infos form{
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.infos form label{
+    display: block;
+    background-color: cadetblue;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.infos form input, textarea{
+    display: block;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+}
+
+.infos form input, textarea[placeholder]{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.infos form input{
     height: 50px;
 }
 
-.inputs::placeholder {
-    text-align: center;
-}
-
-.inputs button {
+.infos form button{
     width: 100px;
     height: 40px;
-    position: absolute;
-    right: 0%;
-    bottom: -35px;
+    border: none;
     border-radius: 5px;
-    background-color: green;
-    color: white;
+    color: cadetblue;
     cursor: pointer;
+    margin-left: 58%;
 }
 
-.inputs button:hover{
-    background-color: white;
-    color: green;
-    transition: 500ms all;
+.infos form button:hover{
+    background-color: cadetblue;
+    color: #EFEFEF;
+    transition: 0.5s all;
 }
 
-.adres {
-    width: 50%;
-    height: 400px;
-    border: 1px solid rgb(212, 210, 210);
-    margin: 10px 10px 10px 5px;
-    border-radius: 5px;
-}
-
-.adres h2{
+.infos .adres{
+    flex: 1 1 45%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 572px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+    margin: 10px 10px;
     text-align: center;
-    margin: 50px;
+    line-height: 1.8;
+    letter-spacing: 3px;
+    width: 100%;
 }
 
-.adres span{
-    display: block;
-    text-align: center;
-    line-height: 50px;
+
+/*! Breakpoints*/
+
+@media (max-width:600px){
+    /*mainpage*/
+
+    .social #logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    #logo span{
+        border-left: none;
+        padding-left: 0;
+        font-size: small;
+        font-style: italic;
+    }
+
+    .container span{
+        font-size: 35px;
+    }
+
+    section nav a {
+        padding-left: 10px;
+    }
+
+    section nav ul li a i {
+        padding: 10px;
+        margin-left: -10px;
+    }
+
+    section nav ul li a span{
+        display: none;
+    }
+
+    .infos form input, textarea[placeholder]{
+        font-size: 10px;
+    }
+
+    .infos form button{
+        margin: 0;
+    }
+
+    .infos .adres{
+        height: auto;
+        gap: 10px;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+
+    .infos .adres p{
+        font-size: 10px;
+    }
+
+
 }
 
+@media (min-width:601px) and (max-width:1800px){
+    section nav ul li a span{
+        display: none;
+    }
+}
